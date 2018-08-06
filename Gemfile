@@ -8,7 +8,7 @@ unless ENV["CI"]
   gem "yard",   require: false
 end
 
-gem "hanami-utils",   "~> 2.0.alpha", git: "https://github.com/hanami/utils.git",   branch: "unstable"
+gem "hanami-utils",   "~> 2.0.alpha", git: "https://github.com/hanami/utils.git",   branch: "260-convert-hash-and-string-in-modules"
 gem "hanami-helpers", "~> 2.0.alpha", git: "https://github.com/hanami/helpers.git", branch: "unstable"
 gem "hanami-view",    "~> 2.0.alpha", git: "https://github.com/hanami/view.git",    branch: "unstable"
 
