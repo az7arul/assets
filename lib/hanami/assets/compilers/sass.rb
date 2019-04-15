@@ -38,7 +38,7 @@ module Hanami
         # @since 0.3.0
         # @api private
         def engine
-          ::Sass::Engine.for_file(source.to_s, load_paths: load_paths, cache_location: CACHE_LOCATION)
+          ::SassC::Engine.new(File.read(source.to_s), load_paths: load_paths, cache_location: CACHE_LOCATION)
         end
       end
     end
